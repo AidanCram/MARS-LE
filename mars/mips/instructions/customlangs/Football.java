@@ -359,7 +359,7 @@ public class Football extends CustomAssembly {
                                         SystemIO.printString("They Get The Tackle In The Backfield!\n");
                                         break;
                                     case 3:
-                                        SystemIO.printString("He Got About 3 Yards On That Run\n");
+                                        SystemIO.printString("He Gets About 3 Yards On That Run\n");
                                         break;
                                     default:
                                         SystemIO.printString("What A Catch!\n");
