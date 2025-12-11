@@ -169,6 +169,8 @@ public class Football extends CustomAssembly {
                             public void simulate(ProgramStatement statement) throws ProcessingException
                             {
                                 SystemIO.printString("Interception!\n");
+                                down = 1;
+                                yardsToGo = 10;
                             }
                         }));
         instructionList.add(
@@ -198,6 +200,8 @@ public class Football extends CustomAssembly {
                                 int yard = 30;
                                 RegisterFile.updateRegister(operands[0], yard);
                                 SystemIO.printString("He Returns It To The 30\n");
+                                down = 1;
+                                yardsToGo = 10;
                             }
                         }));
         instructionList.add(
@@ -288,6 +292,8 @@ public class Football extends CustomAssembly {
                                 int yard = 40;
                                 RegisterFile.updateRegister(operands[0], yard);
                                 SystemIO.printString("Ball Spotted At The 40\n");
+                                down = 1;
+                                yardsToGo = 10;
                             }
                         }));
         instructionList.add(
@@ -406,6 +412,8 @@ public class Football extends CustomAssembly {
                                 if (yardage >= 100) {
                                     RegisterFile.updateRegister(operands[0], 25);
                                     SystemIO.printString("It's A Touchback\n");
+                                    down = 1;
+                                    yardsToGo = 10;
                                 }
                             }
                         }));
