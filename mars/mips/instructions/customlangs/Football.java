@@ -68,7 +68,6 @@ public class Football extends CustomAssembly {
                             public void simulate(ProgramStatement statement) throws ProcessingException
                             {
                                 SystemIO.printString("$t1 = yard number\n" +
-                                        "$t2 = down number\n" +
                                         "$t3 = Loaded yards to add to $t1 (sp, mp, blitz, etc)\n" +
                                         "$t5 = Team 1 score\n" +
                                         "$t6 = Team 2 score\n\n" +
