@@ -1,7 +1,6 @@
-# MARS
-MARS (official) MIPS Assembler and Runtime Simulator
+Football Simulator
 
- MARS is a lightweight interactive development environment (IDE) for programming in MIPS assembly language, intended for educational-level use with Patterson and Hennessy's Computer Organization and Design.
- MARS was developed by Pete Sanderson and Ken Vollmar and can be found at https://dpetersanderson.github.io/.
+Instructions: audi, blitz, cointoss, defended, fieldgoal, hike, intercep, kickoff, kickreturn, lp, man, mp, pat, punt, puntreturn, run, scoreboard, sp, success, tback, tdown, truck, yardline, and zone. 
 
- This fork of MARS is a research project undertaken by John Edelman, Jun Law, and Dominic Dabish in summer 2025, aiming to modernize MARS and specifically to enable students to specify their own custom assembly languages for use with the MARS simulator.
+The first instruction run should be cointoss as it defines all the registers. It is important to write the instructions the exact way they appear in the Basic Instructions tab in the Help menu, displayed as a ?, except for instructions with $t5 or $t6 as those represent the home and away team. Whichever you decide to be the Home team must precede the other. The instruction immediately after run, blitz, lp, sp, or mp must be succeed or defended to correctly update yardage and down.
+
