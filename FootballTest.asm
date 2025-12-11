@@ -4,7 +4,7 @@ cointoss
 defended $t3
 fieldgoal $t5
 hike
-intercep
+intercep $t1
 kickoff $t1
 kickreturn $t1
 lp $t3               

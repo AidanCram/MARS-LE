@@ -159,18 +159,20 @@ public class Football extends CustomAssembly {
                             }
                         }));
         instructionList.add(
-                new BasicInstruction("intercep",
-                        "Prints Interception!",
+                new BasicInstruction("intercep $t1",
+                        "Loads 50 into $t1 and prints Interception!",
                         BasicInstructionFormat.R_FORMAT,
-                        "000000 00000 00000 00000 00000 000101",
+                        "000000 00000 fffff 00000 00000 000101",
                         new SimulationCode()
                         {
 
                             public void simulate(ProgramStatement statement) throws ProcessingException
                             {
+                                int[] operands = statement.getOperands();
                                 SystemIO.printString("Interception!\n");
                                 down = 1;
                                 yardsToGo = 10;
+                                RegisterFile.updateRegister(operands[0], 50);
                             }
                         }));
         instructionList.add(
