@@ -356,7 +356,7 @@ public class Football extends CustomAssembly {
                                 int call = prevPlay;
                                 switch (call) {
                                     case -3:
-                                        SystemIO.printString("They Get Tackle In The Backfield!\n");
+                                        SystemIO.printString("They Get The Tackle In The Backfield!\n");
                                         break;
                                     case 3:
                                         SystemIO.printString("He Got About 3 Yards On That Run\n");
